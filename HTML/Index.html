@@ -12,7 +12,35 @@
 
 <script type="text/javascript" src="CalcFixed.js"></script>
 
-<button onclick="CalcSideB(5,146.81,13.18)">Try it</button>
+
+
+<select size="1" id="slt_side" name="Side">
+    <option value="A">Side-a</option>
+    <option value="B">Side-b</option>
+    <option value="C">Side-c</option>
+</select>
+<input name="first_input" id="slt_side_input">
+
+<select size="1" id="slt_angle" name="Side">
+    <option value="a">Angle-a</option>
+    <option value="b">Angle-b</option>
+    <option value="c">Angle-c</option>
+</select>
+<input name="first_input" id="slt_angle_input">
+
+<select size="1" id="slt_angle_side" name="Side">
+    <option value="A">Side-a</option>
+    <option value="B">Side-b</option>
+    <option value="C">Side-c</option>
+    <option value="a">Angle-A</option>
+    <option value="b">Angle-B</option>
+    <option value="c">Angle-C</option>
+</select>
+<input name="first_input" id="slt_angle_side_input">
+
+
+
+<button onclick="combine()">Try it</button>
 
 </body>
 </html>
