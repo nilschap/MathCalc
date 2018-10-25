@@ -8,42 +8,51 @@ Math.degrees = function(radians) {
     return radians * 180 / Math.PI;
 };
 
+//Test combine
+function test(){
+    var test=combine();
+}
+
 // Get Inputs from drop Downs
 function getvalue() {
     var e = document.getElementById("slt_side");
     var strUser = e.options[e.selectedIndex].value;
-    document.write("Selected Option "+strUser);
     return strUser;
 }
 
 // Get value from Input field
 function getinp(){
-    var input = document.getElementById("slt_side_input").value;
-    document.write(input)
-    return input();
+    var x = document.getElementById("slt_side_input").value;
+    return x;
 }
 
 //Combine Input with drop down decision
 function combine(){
     var slt_dropdown=getvalue();
-    var input=getinp();
-    document.write(slt_dropdown);
+    var put=getinp();
 
     switch (slt_dropdown) {
-        case A:
-        var A=input;
-        return A;
+        case "A":
+        var side_A="A"+put;
+        document.write(side_A);
+        return  side_A;
             break;
-        case B:
-            var B=input;
-            return B;
+        case "B":
+            var side_B="B"+put;
+            document.write(side_B);
+            return side_B;
             break;
-        case C:
-            var C=input;
-            return C;
+        case "C":
+            var side_C="C"+put;
+            document.write(side_C);
+            return side_C;
             break;
+
+        default :
+            return "Error";
     }
 }
+
 
 function CalcSideA(seiteb,winkela,winkelb){
 
@@ -66,7 +75,7 @@ function CalcSideB(seitea,winkelb,winkela){
     var sinofa=Math.sin(Math.radians(winkela));
     document.write("Sin of a "+sinofa.toFixed(2));
 
-    var solution = seitea*sinofb/sinofa
+    var solution = seitea*sinofb/sinofa;
     document.write("Solution"+solution.toFixed(2));
 
 }
@@ -107,8 +116,6 @@ function CalcAngleB(seita,winkela,seitb){
 
     var solution=Math.degrees(Math.asin(betweensolution));
     document.write("Solution"+solution.toFixed(2));
-    
-
 }
 
 
