@@ -119,24 +119,6 @@ function CalcAngleB(seita,winkela,seitb){
 /////////////////////////////////////////Cosinus///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Winkel mit drei seiten Berechnen
-function CalcAngleB(seitea,seitec,seiteb){
-    //Erste Seite der Gleichung
-    var lower=2*seitea*seitec;
-    document.write(lower+" l ");
-
-    //Zweite Seite der Gleichung
-    var uper=Math.pow(seitea,2)+Math.pow(seitec,2)-Math.pow(seiteb,2);
-    document.write(uper+" u ");
-
-    //Cosinus wert
-    var solution= uper/lower;
-    document.write(solution+" s ");
-
-    var changed=Math.degrees(Math.acos(solution));
-    document.write(changed);
-}
-
 //Seite A berechnen
 function CosCalcSideA(sideb,sidec,anglea){
 
@@ -172,6 +154,55 @@ function CosCalcSideC(sidea,sideb,angley){
 }
 
 
+//Winkel A Berechnen
+function CosCalcAngleA(seitea,seiteb,seitec){
+
+    var lower=-2*seiteb*seitec;
+    document.write(lower+" l ");
+
+
+    var uper=Math.pow(seitea,2)-Math.pow(seiteb,2)-Math.pow(seitec,2);
+    document.write(uper+" u ");
+
+    var solution=uper/lower;
+    document.write(" s "+solution);
+
+    var changed=Math.degrees(Math.acos(solution));
+    document.write(" c "+changed);
+
+    return changed;
+}
+
+//Winkel mit drei seiten Berechnen
+function CosCalcAngleB(seitea,seitec,seiteb){
+    //Erste Seite der Gleichung
+    var lower=2*seitea*seitec;
+    document.write(lower+" l ");
+
+    //Zweite Seite der Gleichung
+    var uper=Math.pow(seitea,2)+Math.pow(seitec,2)-Math.pow(seiteb,2);
+    document.write(uper+" u ");
+
+    //Cosinus wert
+    var solution= uper/lower;
+    document.write(solution+" s ");
+
+    var changed=Math.degrees(Math.acos(solution));
+    document.write(changed);
+
+    return changed;
+}
+
+//Winkel C Berechnen
+function CosCalcAngleC(seitec,seitea,seiteb){
+
+    var angleb=CosCalcAngleB(seitea,seitec,seiteb);
+    var anglea=CosCalcAngleA(seitea,seiteb,seitec);
+    var angles=anglea+angleb;
+    var missingangle=180-angles;
+
+    document.write("Missing angle:"+missingangle);
+}
 
 
 

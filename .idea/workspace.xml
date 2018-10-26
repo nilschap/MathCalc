@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a2f509-99cb-413f-a196-19af63ac77f7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HTML/CalcFixed.js" afterPath="$PROJECT_DIR$/HTML/CalcFixed.js" />
       <change beforePath="$PROJECT_DIR$/HTML/Index.html" afterPath="$PROJECT_DIR$/HTML/Index.html" />
     </list>
@@ -22,8 +21,8 @@
             <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/HTML/Index.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1452">
-                    <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+                  <state relative-caret-position="1386">
+                    <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="39" />
                     <folding />
                   </state>
                 </provider>
@@ -39,8 +38,8 @@
       <file leaf-file-name="CalcFixed.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML/CalcFixed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
-              <caret line="117" column="123" lean-forward="true" selection-start-line="117" selection-start-column="123" selection-end-line="117" selection-end-column="123" />
+            <state relative-caret-position="545">
+              <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -260,15 +259,16 @@
       <updated>1540366748867</updated>
       <workItem from="1540366759939" duration="40436000" />
       <workItem from="1540500473571" duration="589000" />
-      <workItem from="1540544494498" duration="7270000" />
+      <workItem from="1540544494498" duration="13013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48295000" />
+    <option name="totallyTimeSpent" value="54038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7667" y="-13" width="3866" height="2346" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -282,7 +282,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -375,16 +375,16 @@
     <entry file="file://$PROJECT_DIR$/HTML/MathCalcMain.js" />
     <entry file="file://$PROJECT_DIR$/HTML/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="1386">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/CalcFixed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="117" column="123" lean-forward="true" selection-start-line="117" selection-start-column="123" selection-end-line="117" selection-end-column="123" />
+        <state relative-caret-position="545">
+          <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="28" />
           <folding />
         </state>
       </provider>
