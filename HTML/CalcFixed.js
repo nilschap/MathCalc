@@ -8,11 +8,6 @@ Math.degrees = function(radians) {
     return radians * 180 / Math.PI;
 };
 
-//Test combine
-function test(){
-    var test=combine();
-}
-
 // Get Inputs from drop Downs
 function getvalue() {
     var e = document.getElementById("slt_side");
@@ -117,6 +112,69 @@ function CalcAngleB(seita,winkela,seitb){
     var solution=Math.degrees(Math.asin(betweensolution));
     document.write("Solution"+solution.toFixed(2));
 }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////Cosinus///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Winkel mit drei seiten Berechnen
+function CalcAngleB(seitea,seitec,seiteb){
+    //Erste Seite der Gleichung
+    var lower=2*seitea*seitec;
+    document.write(lower+" l ");
+
+    //Zweite Seite der Gleichung
+    var uper=Math.pow(seitea,2)+Math.pow(seitec,2)-Math.pow(seiteb,2);
+    document.write(uper+" u ");
+
+    //Cosinus wert
+    var solution= uper/lower;
+    document.write(solution+" s ");
+
+    var changed=Math.degrees(Math.acos(solution));
+    document.write(changed);
+}
+
+//Seite A berechnen
+function CosCalcSideA(sideb,sidec,anglea){
+
+    var firstside=Math.pow(sideb,2)+Math.pow(sidec,2);
+    document.write("First side"+firstside.toFixed(2));
+    var secondside=2*sideb*sidec*Math.cos(Math.radians(anglea));
+    document.write("Second side"+secondside.toFixed(2));
+
+    var solution=Math.sqrt(firstside-secondside);
+    document.write("solution"+solution.toFixed(2));
+}
+
+//Seite B berechnen
+function CosCalcSideB(sidea,sidec,anglb){
+
+    var firstside=Math.pow(sidea,2)+Math.pow(sidec,2);
+
+    var secondside=2*sidea*sidec*Math.cos(Math.radians(anglb));
+
+    var solution=Math.sqrt(firstside-secondside);
+    document.write(solution);
+}
+
+//Seite C Berechnen
+function CosCalcSideC(sidea,sideb,angley){
+
+    var firstside=Math.pow(sidea,2)+Math.pow(sideb,2);
+
+    var secondside=2*sidea*sideb*Math.cos(Math.radians(angley));
+
+    var solution=Math.sqrt(firstside-secondside);
+    document.write(solution);
+}
+
+
+
+
+
 
 
 
