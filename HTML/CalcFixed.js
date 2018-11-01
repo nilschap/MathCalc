@@ -120,7 +120,7 @@ function CalcAngleB(seita,winkela,seitb){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Seite A berechnen
-function CosCalcSideA(sideb,sidec,anglea){
+    function CosCalcSideA(sideb,sidec,anglea){
 
     var firstside=Math.pow(sideb,2)+Math.pow(sidec,2);
     document.write("First side"+firstside.toFixed(2));
@@ -203,6 +203,23 @@ function CosCalcAngleC(seitec,seitea,seiteb){
 
     document.write("Missing angle:"+missingangle);
 }
+
+
+function pythagoraskathete(sA,sC){
+   var kathete= Math.sqrt(Math.pow(sC,2)-Math.pow(sA,2));
+   document.write(kathete);
+}
+
+function pythagoraskathete(sB,sC){
+    var kathete= Math.sqrt(Math.pow(sC,2)-Math.pow(sB,2));
+    document.write(kathete);
+}
+
+function phytagorashypotenuse(sA,sB) {
+    var hypotenuse = Math.sqrt(Math.pow(sA,2)+Math.pow(sB,2));
+    document.write(hypotenuse);
+}
+
 
 
 
