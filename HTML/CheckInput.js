@@ -5,39 +5,94 @@ function getfirstdropdownvalue() {
 }
 
 function getseconddropdownvalue() {
-    var e = document.getElementById("slt_side");
+    var e = document.getElementById("slt_angle");
     var strUser = e.options[e.selectedIndex].value;
     return strUser;
 }
 
 function getthirddropdownvalue() {
-    var e = document.getElementById("slt_side");
+    var e = document.getElementById("slt_angle_side");
     var strUser = e.options[e.selectedIndex].value;
     return strUser;
 }
 
-
-
-
-if(getfirstdropdownvalue().localeCompare("s1"||"s2"||"s3")&&getseconddropdownvalue().localeCompare("s1"||"s2"||"s3")){
-    //Pythagoras
-}else if(getseconddropdownvalue().localeCompare("s1"||"s2"||"s3")&&getthirddropdownvalue().localeCompare("s1"||"s2"||"s3")){
-    //Pythagoras
-}else if(getfirstdropdownvalue().localeCompare("s1"||"s2"||"s3")&&getthirddropdownvalue().localeCompare("s1"||"s2"||"s3")&&getseconddropdownvalue("s1"||"s2"||"s3")){
-    //Wan muss welche Funktion verwenden
-    //Cosinus Satzt winkel berechnung
+function getfirstinput(){
+    var x = document.getElementById("slt_first_input").value;
+    return x;
 }
 
-if(getfirstdropdownvalue().localeCompare("w1","w2","w3")&&getseconddropdownvalue().localeCompare("w1"+"w2"+"w3")){
-    //Wann welche Funktion verwenden
-    //Letzten Wicklen mit summe von beiden Winkeln berechnen
-    //Und fehlende Seiten berechnen
-}else if(getseconddropdownvalue().localeCompare("w1","w2","w3")&&getthirddropdownvalue().localeCompare("w1"+"w2"+"w3")){
-    //Wann welche Funktion verwenden
-    //Letzte Wickel mit summe von beiden Winkeln berechnen
-    //Und fehlende Seiten Berchnen
+function getsecondinput(){
+    var x = document.getElementById("slt_second_input").value;
+    return x;
 }
 
+function getthirdinput(){
+    var x = document.getElementById("slt_third_input").value;
+    return x;
+}
+
+
+
+
+//Combine Input with drop down decision
+function combine(wichone){
+    docment.write(wichone)
+    var slt_dropdown;
+    var put;
+
+    if(wichone===1) {
+        slt_dropdown = getfirstdropdownvalue();
+        put = getfirstinput();
+    }else if(wichone===2){
+        slt_dropdown = getseconddropdownvalue();
+        put = getsecondinput();
+    }else if(wichone===3){
+        slt_dropdown = getthirddropdownvalue();
+        put = getthirdinput();
+    }
+
+
+    switch (slt_dropdown) {
+        case "s1":
+            var side_A="A"+put;
+            return  side_A;
+            break;
+        case "s2":
+            var side_B="B"+put;
+            document.write(side_B);
+            return side_B;
+            break;
+        case "s3":
+            var side_C="C"+put;
+            document.write(side_C);
+            return side_C;
+            break;
+
+        default :
+            return "Error";
+    }
+}
+
+
+function order() {
+    var firstdropdownvalue=getfirstdropdownvalue();
+    var seconddropdownvalue=getseconddropdownvalue();
+
+    var wichone=0;
+
+    var firstinputvalue = combine(wichone);
+    var secondinputvalue= combine(2);
+
+    document.write(firstinputvalue);
+    document.write(secondinputvalue);
+
+    if(firstdropdownvalue===("sa" || "sb" || "sc") && seconddropdownvalue===("sa" || "sb" || "sc")){
+        document.write(firstinputvalue);
+        if(firstinputvalue.charAt(0)==="sa"||"sb"&&secondinputvalue==="sa"||"sb"){
+            pythagoraskathete(firstinputvalue,secondinputvalue);
+        }
+    }
+}
 
 
 
